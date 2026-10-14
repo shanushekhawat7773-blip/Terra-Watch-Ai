@@ -1,0 +1,77 @@
+/* ==========================================================================
+   TERRAWATCH AI DESIGN SYSTEM TOKENS
+   Aesthetic: Mission control meets editorial cartography (Planet Labs + Linear)
+   ========================================================================== */
+
+:root {
+  /* Surface & Base (Dark-first, near-black with faint moss undertone) */
+  --tw-bg: #0B0D0C;
+  --tw-surface-1: #111413;
+  --tw-surface-2: #171B19;
+  --tw-surface-3: #1E2320;
+  
+  /* Borders (Strict 1px hairline) */
+  --tw-border-hairline: rgba(255, 255, 255, 0.08);
+  --tw-border-subtle: rgba(255, 255, 255, 0.12);
+  --tw-border-focus: #E8A33D;
+
+  /* Typography / Content Hierarchy */
+  --tw-text-primary: #E8EAE6;
+  --tw-text-secondary: #9AA09A;
+  --tw-text-tertiary: #5E655F;
+  --tw-text-muted: #3D423E;
+
+  /* ONE UI Accent: Signal Amber */
+  --tw-accent: #E8A33D;
+  --tw-accent-dim: rgba(232, 163, 61, 0.15);
+  --tw-accent-glow: rgba(232, 163, 61, 0.3);
+
+  /* Semantic Alert Severity (Strictly reserved for alert indicators & status) */
+  --tw-severity-low: #7A9E7E;
+  --tw-severity-medium: #D9B44A;
+  --tw-severity-high: #E07B39;
+  --tw-severity-critical: #D64545;
+
+  /* Data-Only Spectral Layers (Used solely inside map data & visualizations) */
+  --tw-data-veg: #6FA06B;
+  --tw-data-water: #4A8FA3;
+  --tw-data-soil: #A88663;
+  --tw-data-urban: #8A847E;
+
+  /* Typography Stacks */
+  --tw-font-serif: "Instrument Serif", "Fraunces", Georgia, serif;
+  --tw-font-sans: "Geist", "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --tw-font-mono: "Geist Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* Grid & Radii */
+  --tw-radius-xs: 2px;
+  --tw-radius-sm: 4px;
+  --tw-radius-md: 6px;
+  --tw-spacing-grid: 8px;
+
+  /* Motion Curves */
+  --tw-ease-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --tw-ease-ui: 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  --tw-ease-reveal: 600ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Subtle Film Grain Noise Overlay */
+.tw-film-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Monospace Micro-Label */
+.tw-micro-label {
+  font-family: var(--tw-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tw-text-tertiary);
+}
+
+/* Monospace Tabular Figures */
+.tw-tabular {
+  font-family: var(--tw-font-mono);
+  font-feature-settings: "tnum" 1, "zero" 1;
+}
